@@ -1,0 +1,6 @@
+# Bash profile prototype
+
+
+* Author: Fred Brooker <f@mxd.cz>
+* Twitter: @FredBrooker https://twitter.com/FredBrooker
+* GitHub: https://github.com/mxdpeep
