@@ -123,10 +123,10 @@ export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/.cargo/bin:$HOME/bin:$HOME/scripts
 
-source ~/.git-prompt.sh
-source ~/.git-completion.bash
+source $HOME/.git-prompt.sh
+source $HOME/.git-completion.bash
+source $HOME/.cargo/env
 
-#PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\] \[\033[33;1m\]\w\[\033[m\] (\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)) \$ "
 
 df -h | grep -v "/snap"
