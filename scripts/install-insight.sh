@@ -1,9 +1,8 @@
 #!/bin/bash
-#@author Filip Oščádal <oscadal@gscloud.cz>
 
 cd "$(dirname "$0")"
 export PATH=$PATH:/snap/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export PATH=$PATH:$HOME/go/bin:$HOME/.cargo/bin:$HOME/bin:$HOME/scripts
 
-sudo docker rm redisinsight --force
-sudo docker run -v redisinsight:/db -p 8801:8001 --name redisinsight redislabs/redisinsight
+docker rm redisinsight --force
+docker run -v redisinsight:/db -p 7777:8001 --name redisinsight -d redislabs/redisinsight
