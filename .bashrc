@@ -137,7 +137,7 @@ if [ -d "$HOME/.cargo/" ]; then
   . "$HOME/.cargo/env"
 fi
 
-# Composer bin
+# Composer
 if [ -d "$HOME/.config/composer/vendor/bin" ]; then
   export PATH=$PATH:$HOME/.config/composer/vendor/bin
 fi
