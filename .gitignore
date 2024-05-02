@@ -1,0 +1,16 @@
+*.bak
+*.tar
+*.tgz
+*.zip
+*~
+
+.DS_Store
+.Trash-1000
+.phpintel/
+.vscode/
+
+Thumbs.db
+
+cache/
+node_modules/
+vendor/
