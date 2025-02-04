@@ -3,9 +3,9 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 # ls
+alias ll='ls -lh'
 alias l='ll -CF'
 alias la='ll -a'
-alias ll='ls -lh'
 alias lr='ll -R'
 
 # disk human
