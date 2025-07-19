@@ -120,6 +120,7 @@ export LC_MESSAGES=en_US.UTF-8
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/.cargo/bin:$HOME/bin:$HOME/scripts
+export GEMINI_MODEL="gemini-2.5-flash"
 
 # git
 source $HOME/.git-prompt.sh
@@ -130,6 +131,9 @@ PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\] \[\033[33;1m\]\w\[\033[m\] (\$(git br
 
 # disk free
 alias df='df -h -x"squashfs" -x"tmpfs"'
+
+# disk used
+alias du='dust'
 
 # Cargo
 if [ -d "$HOME/.cargo/" ]; then

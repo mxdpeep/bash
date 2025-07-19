@@ -10,7 +10,6 @@ alias lr='ll -R'
 
 # disk human
 alias df='df -h'
-alias du='du -h'
 
 # apt
 alias listinstalled='listpackages | grep -v deinstall'
@@ -39,13 +38,13 @@ alias refreshfont='sudo fc-cache -f -v'
 alias setnemo='xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search'
 alias setterm='gconftool --type string --set /desktop/gnome/applications/terminal/exec terminator'
 alias showbinds='findmnt|grep "\["'
-alias today='egrep -h "$(date +"%m/%d|%b* %d")" /usr/share/calendar/calendar*'
 alias vdiuuid='VBoxManage internalcommands sethduuid'
 alias webmirror='wget -m --html-extension --convert-links --restrict-file-names=windows -e robots=off -U "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)"'
 alias webserver='python3 -m http.server 8080'
 alias ytbdl='yt-dlp -x --audio-format mp3'
-alias getwavduration='find . -type f -name "*.wav" -print0 | parallel -0 ffprobe -hide_banner -v error -of default=noprint_wrappers=1:nokey=1 -show_entries stream=duration | paste - -sd+ - | bc'
 alias pocasi='curl wttr.in/brno'
+alias dnes='egrep -h "$(date +"%m/%d|%b* %d")" /usr/share/calendar/calendar*'
+alias resetpw='systemctl --user restart pipewire.service pipewire-pulse.service wireplumber.service'
 
 # reload bash
 alias reload='. ~/.bashrc'
