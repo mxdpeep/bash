@@ -43,8 +43,9 @@ alias webmirror='wget -m --html-extension --convert-links --restrict-file-names=
 alias webserver='python3 -m http.server 8080'
 alias ytbdl='yt-dlp -x --audio-format mp3'
 alias pocasi='curl wttr.in/brno'
-alias dnes='egrep -h "$(date +"%m/%d|%b* %d")" /usr/share/calendar/calendar*'
-alias resetpw='systemctl --user restart pipewire.service pipewire-pulse.service wireplumber.service'
+alias dnes='echo "";egrep -h "$(date +"%m/%d|%b* %d")" /usr/share/calendar/calendar*;echo ""'
+alias resetpipewire='systemctl --user restart pipewire.service pipewire-pulse.service wireplumber.service'
+alias listextensions="find . -type f | sed -n 's/.*\.//p' | awk '!seen[$0]++'"
 
 # reload bash
 alias reload='. ~/.bashrc'
