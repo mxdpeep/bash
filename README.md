@@ -1,4 +1,4 @@
 # Bash profile prototype
 
-* Author: Fred Brooker <f@mxd.cz>
+* Author: Fred Brooker <git@gscloud.cz>
 * GitHub: https://github.com/mxdpeep
