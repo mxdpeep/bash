@@ -1,0 +1,21 @@
+[user]
+	email = git@gscloud.cz
+	name = Fred Brooker
+[push]
+	default = simple
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	unstage = reset HEAD --
+	last = log -1 HEAD
+
+[core]
+	editor = nano
+	autocrlf = input
+[merge]
+	tool = kdiff3
+[pull]
+	ff = only
+[init]
+	defaultBranch = master
